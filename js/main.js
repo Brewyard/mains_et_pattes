@@ -1,5 +1,5 @@
 // load the navbar
 $(function(){
-  $('#navBarPlaceholder').load('navbar.html');
-  $('#footerPlaceholder').load('footer.html');
+  $('#navBarPlaceholder').load('/components/navbar.html');
+  $('#footerPlaceholder').load('/components/footer.html');
 });

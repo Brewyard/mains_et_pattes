@@ -59,38 +59,110 @@
       </a>
     </div>
 
-    <div id="navBarPlaceholder" class="sticky-top">
-      <!-- load in the main.js -->
-    </div>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light border-bottom border-secondary">
+
+      <a class="navbar-brand" href="#">
+        <i class="fas fa-paw fa-2x"></i>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navBar" aria-controls="navBar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navBar">
+
+        <ul class="navbar-nav mr-auto">
+
+          <li class="nav-item active">
+            <a class="nav-link btn" onclick="loadQuisuisje(this)">Qui suis-je ?</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link btn" onclick="loadMethode(this)">Ma méthode</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="prestationsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Mes prestations
+            </a>
+            <div class="dropdown-menu" aria-labelledby="prestationsDropdown">
+              <a class="dropdown-item" href="#">Éducation canine</a>
+              <a class="dropdown-item" href="#">Éducation comportementale</a>
+              <a class="dropdown-item" href="#">Éducation d'un chiot</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Balades éducatives</a>
+              <div class="dropdown-divider"></div>
+              <div class="dropdown-header">Espace bien-être</div>
+              <a class="dropdown-item" href="#">Massages canins</a>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">Engagement associatif</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">Tarifs</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </nav>
 
     <div class="container-fluid bg-light pt-4">
-      <h3 class="text-lg-center font-weight-bold pb-4">Qui suis-je ?</h3>
-      <div class="row">
-        <div class="col-12 col-lg-4 mb-4 mb-lg-0">
-          <picture>
-           <source srcset="https://picsum.photos/250" media="(max-width: 500px)">
-           <source srcset="https://picsum.photos/400">
-           <img src="https://picsum.photos/400" alt="tyson">
-          </picture>
-        </div>
-        <div class="col-12 col-lg-8">
-          <p class="border-bottom pb-3">
-            Je m'appelle Elodie, je suis passionnée depuis toujours par les animaux et j’ai développé une affection toute particulière pour les chiens. Il était donc naturel de faire de ma passion, mon métier.
-          </p>
-          <p class="border-bottom pb-3">
-            Je suis diplômée du centre de formation « Entre chien » basé à Tullins (38), qui forme au métier d'éducateur canin dans le respect du bien-être du chien.
-          </p>
-          <p>
-            Je possède depuis 2013 un Berger Belge Malinois. Depuis son arrivée à la maison nous avons évolué ensemble pour que chacun trouve sa place dans le respect et l’harmonie de la vie commune et beaucoup d’amour.
-            Je travaille bénévolement à la SPA DU DAUPHINE depuis 2017 en compagnie de Tyson pour faciliter la réhabilitation et la socialisation des chiens en attente d'adoption.
-          </p>
+      <div id="centerPlaceholder">
+        <h3 class="text-lg-center font-weight-bold pb-4">Qui suis-je ?</h3>
+        <div class="row">
+          <div class="col-12 col-lg-4 mb-4 mb-lg-0">
+            <picture>
+             <source srcset="https://picsum.photos/250" media="(max-width: 500px)">
+             <source srcset="https://picsum.photos/400">
+             <img src="https://picsum.photos/400" alt="tyson">
+            </picture>
+          </div>
+          <div class="col-12 col-lg-8">
+            <p class="border-bottom pb-3">
+              Je m'appelle Elodie, je suis passionnée depuis toujours par les animaux et j’ai développé une affection toute particulière pour les chiens. Il était donc naturel de faire de ma passion, mon métier.
+            </p>
+            <p class="border-bottom pb-3">
+              Je suis diplômée du centre de formation « Entre chien » basé à Tullins (38), qui forme au métier d'éducateur canin dans le respect du bien-être du chien.
+            </p>
+            <p>
+              Je possède depuis 2013 un Berger Belge Malinois. Depuis son arrivée à la maison nous avons évolué ensemble pour que chacun trouve sa place dans le respect et l’harmonie de la vie commune et beaucoup d’amour.
+              Je travaille bénévolement à la SPA DU DAUPHINE depuis 2017 en compagnie de Tyson pour faciliter la réhabilitation et la socialisation des chiens en attente d'adoption.
+            </p>
+          </div>
         </div>
       </div>
 
-
-
-      <footer id="footerPlaceholder" class="border-top border-secondary pt-4 my-md-5 pt-md-5">
-        <!-- load in main.js -->
+      <footer class="row justify-content-center border-top border-secondary pt-4 my-md-5 pt-md-5">
+        <div class="col-12 col-md-3 my-md-0 my-3">
+          <h5>Mentions légales</h5>
+        </div>
+        <div class="col-12 col-md-3 my-md-0 my-3">
+          <h5>Liens utiles</h5>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item bg-light">Cras justo odio</li>
+            <li class="list-group-item bg-light">Dapibus ac facilisis in</li>
+            <li class="list-group-item bg-light">Morbi leo risus</li>
+            <li class="list-group-item bg-light">Porta ac consectetur ac</li>
+            <li class="list-group-item bg-light">Vestibulum at eros</li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-3 my-md-0 my-3">
+          <h5>Suivez-moi</h5>
+          <ul class="list-group list-group-horizontal list-group-flush">
+            <li class="list-group-item bg-light"> <i class="fab fa-facebook fa-3x"></i> </li>
+            <li class="list-group-item bg-light"> <i class="fab fa-twitter fa-3x"></i> </li>
+            <li class="list-group-item bg-light"> <i class="fab fa-instagram fa-3x"></i> </li>
+          </ul>
+        </div>
       </footer>
 
     </div>

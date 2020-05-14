@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="js" lang="fr">
+<html class="no-js" lang="fr">
 
 <head>
   <meta charset="utf-8">
@@ -74,11 +74,11 @@
         <ul class="navbar-nav mr-auto">
 
           <li class="nav-item active">
-            <a class="nav-link btn" onclick="loadQuisuisje(this)" data-toggle="collapse" data-target="#navBar.show">Qui suis-je ?</a>
+            <a class="nav-link" href="#" onclick="loadQuisuisje(this)" data-toggle="collapse" data-target="#navBar.show">Qui suis-je ?</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link btn" onclick="loadMethode(this)" data-toggle="collapse" data-target="#navBar.show">Ma méthode</a>
+            <a class="nav-link" href="#" onclick="loadMethode(this)" data-toggle="collapse" data-target="#navBar.show">Ma méthode</a>
           </li>
 
           <li class="nav-item dropdown">
@@ -86,27 +86,27 @@
               Mes prestations
             </a>
             <div class="dropdown-menu" aria-labelledby="prestationsDropdown">
-              <a class="dropdown-item" href="#" data-toggle="collapse" data-target="#navBar.show">Éducation canine</a>
-              <a class="dropdown-item" href="#" data-toggle="collapse" data-target="#navBar.show">Éducation comportementale</a>
-              <a class="dropdown-item" href="#" data-toggle="collapse" data-target="#navBar.show">Éducation d'un chiot</a>
+              <a class="dropdown-item" href="#" data-toggle="collapse" data-target="#navBar.show" onclick="loadEducCanine(this)">Éducation canine</a>
+              <a class="dropdown-item" href="#" data-toggle="collapse" data-target="#navBar.show" onclick="loadEducComport(this)">Éducation comportementale</a>
+              <a class="dropdown-item" href="#" data-toggle="collapse" data-target="#navBar.show" onclick="loadEducChiot(this)">Éducation d'un chiot</a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#" data-toggle="collapse" data-target="#navBar.show">Balades éducatives</a>
+              <a class="dropdown-item" href="#" data-toggle="collapse" data-target="#navBar.show" onclick="loadBalades(this)">Balades éducatives</a>
               <div class="dropdown-divider"></div>
-              <div class="dropdown-header" data-toggle="collapse" data-target="#navBar.show">Espace bien-être</div>
-              <a class="dropdown-item" href="#" data-toggle="collapse" data-target="#navBar.show">Massages canins</a>
+              <div class="dropdown-header" data-toggle="collapse" data-target="#navBar.show" onclick="loadBienEtre(this)">Espace bien-être</div>
+              <a class="dropdown-item" href="#" data-toggle="collapse" data-target="#navBar.show" onclick="loadMassages(this)">Massages canins</a>
             </div>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="#" data-toggle="collapse" data-target="#navBar.show">Engagement associatif</a>
+            <a class="nav-link" href="#" data-toggle="collapse" data-target="#navBar.show" onclick="loadEngagement(this)">Engagement associatif</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="#" data-toggle="collapse" data-target="#navBar.show">Tarifs</a>
+            <a class="nav-link" href="#" data-toggle="collapse" data-target="#navBar.show" onclick="loadTarifs(this)">Tarifs</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="#" data-toggle="collapse" data-target="#navBar.show">Contact</a>
+            <a class="nav-link" href="#" data-toggle="collapse" data-target="#navBar.show" onclick="loadContact(this)">Contact</a>
           </li>
 
         </ul>

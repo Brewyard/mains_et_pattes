@@ -262,7 +262,7 @@ textarea {
 }
 
 /* Personnalisation */
-#carouselAccueil {
+.carousel {
   width : auto;
   height : 16em;
   overflow: hidden;

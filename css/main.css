@@ -264,6 +264,25 @@ textarea {
 /* Personnalisation */
 .carousel {
   width : auto;
-  height : 16em;
+  height : 25vh;
   overflow: hidden;
+}
+
+@media (min-width: 500px){
+
+  .carousel {
+    width : auto;
+    height : 60vh;
+    overflow: hidden;
+  }
+
+  /* .carousel img {
+    transform: translateY(-30%);
+  } */
+
+}
+
+.responsive-img {
+  max-width: 100%;
+  height: auto;
 }
